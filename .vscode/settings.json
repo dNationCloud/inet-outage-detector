@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "Cwnd",
+    "IFNE",
+    "iperf",
+    "levelname",
+    "Mbits",
+    "Mikro"
+],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4
+}

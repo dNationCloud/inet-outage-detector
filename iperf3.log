@@ -1,0 +1,67 @@
+# iperf3 from Ubuntu 20.04 output
+
+iperf 3.7
+Linux e15 5.15.0-56-generic #62~20.04.1-Ubuntu SMP Tue Nov 22 21:24:20 UTC 2022 x86_64
+Control connection MSS 1448
+Time: Mon, 19 Dec 2022 18:59:15 GMT
+Connecting to host h1.ifne.eu, port 6050
+Reverse mode, remote host h1.ifne.eu is sending
+      Cookie: r64wbnflsbjadzh2zdrrsztqfswrxmhpo4if
+      TCP MSS: 1448 (default)
+      Target Bitrate: 100000
+[  5] local 192.168.88.117 port 60926 connected to 46.4.77.52 port 6050
+Starting Test: protocol: TCP, 1 streams, 512 byte blocks, omitting 0 seconds, 7200 second test, tos 0
+[ ID] Interval           Transfer     Bitrate
+[  7]   0.00-1.00   sec   592 KBytes  4.85 Mbits/sec                  
+[  7]   1.00-2.00   sec   682 KBytes  5.59 Mbits/sec                  
+[  7]   2.00-3.00   sec  0.00 Bytes   0.00 bits/sec
+...
+[  7] 7197.00-7198.00 sec   512 KBytes  4.19 Mbits/sec                  
+[  7] 7198.00-7199.00 sec  0.00 Bytes   0.00 bits/sec
+[  7] 7199.00-7200.00 sec  0.00 Bytes   0.00 bits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bitrate         Retr
+[  7]   0.00-7200.00 sec  4.19 GBytes  5.00 Mbits/sec  5928             sender
+[  7]   0.00-7200.00 sec  4.19 GBytes  5.00 Mbits/sec                  receiver
+rcv_tcp_congestion cubic
+
+iperf Done.
+
+
+
+# iperf3 from Ubuntu 16.04 output
+
+iperf 3.0.11
+Linux user-HP-EliteBook-8530p 4.15.0-142-generic #146~16.04.1-Ubuntu SMP Tue Apr 13 09:27:15 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Time: Sun, 18 Dec 2022 13:26:15 GMT
+Connecting to host h1.ifne.eu, port 6051
+Reverse mode, remote host h1.ifne.eu is sending
+      Cookie: user-HP-EliteBook-8530p.1671369975.5
+      TCP MSS: 1448 (default)
+[  4] local 192.168.88.229 port 42306 connected to 46.4.77.52 port 6051
+Starting Test: protocol: TCP, 1 streams, 512 byte blocks, omitting 0 seconds, 86400 second test
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec   614 KBytes  5.03 Mbits/sec    0   73.5 KBytes       
+[  4]   1.00-2.00   sec   640 KBytes  5.24 Mbits/sec    0   73.5 KBytes       
+...
+[  4] 20352.00-20353.00 sec   640 KBytes  5.24 Mbits/sec    1   1.41 KBytes       
+[  4] 20353.00-20354.00 sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  4] 20354.00-20355.00 sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  4] 20355.00-20356.00 sec  0.00 Bytes  0.00 bits/sec    1   1.41 KBytes       
+[  4] 20356.00-20357.00 sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  4] 20357.00-20358.00 sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  4] 20358.00-20359.00 sec  0.00 Bytes  0.00 bits/sec    0   1.41 KBytes       
+[  4] 20359.00-20360.00 sec   128 KBytes  1.05 Mbits/sec   10   18.4 KBytes       
+[  4] 20360.00-20361.00 sec  1.00 MBytes  8.39 Mbits/sec    0   35.4 KBytes       
+...
+[  4] 86398.00-86399.00 sec   640 KBytes  5.24 Mbits/sec    0   52.3 KBytes       
+[  4] 86399.00-86400.00 sec   640 KBytes  5.24 Mbits/sec    0   52.3 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Test Complete. Summary Results:
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-86400.00 sec  50.3 GBytes  5.00 Mbits/sec  1946             sender
+[  4]   0.00-86400.00 sec  50.3 GBytes  5.00 Mbits/sec                  receiver
+CPU Utilization: local/receiver 0.3% (0.0%u/0.3%s), remote/sender 0.0% (0.0%u/0.0%s)
+
+iperf Done.
