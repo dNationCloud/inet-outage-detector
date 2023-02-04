@@ -1,6 +1,6 @@
 # dNation Internet Outage Detector
 
-Ever wondered why your video calls sometimes suffer from poor voice/video quality? It may be related to reliability (not capacity) of your Internet connection.
+Ever wondered why your video calls sometimes suffer from poor voice/video quality? It may be related to reliability (not bandwidth) of your Internet connection.
 
 We had this problem in my company for a while, main difficulty was that it happened only rarely. This project helps to detect Internet outages over a long period of time (e.g. 1 month) with minimal footprint. 
 
@@ -117,7 +117,6 @@ Following use cases were considered:
 * Real outages are those when one test reports outage while the other doesn't, so Wi-Fi router reporting an outage is defective
 
 # Open Tasks
-1. Publish to GitHub
 1. Re-do summary as described is output.ods
 1. New switch `--min-duration 10`
 1. Support MatterMost notifications
